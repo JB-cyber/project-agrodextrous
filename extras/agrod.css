@@ -1,0 +1,111 @@
+body {
+    position: relative !important;  
+}
+
+
+/* Hero Background */
+.hero {
+    /* background-image: url("images/image1.jpg"); */
+    max-width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/image1.jpg") center/cover;
+}
+
+/* NavBar Text */
+#NavText {
+    font-weight: 500;
+}
+#NavText > li > a:hover {
+    color: rgb(255, 199, 95);
+}
+
+/* Contact button */
+.contact-btn {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    border: #FFC107 solid 1px;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: white;
+}
+.contact-btn:hover {
+    color: black;
+    background-color: #FFC107;
+}
+
+/* Dropdown on hover */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {display: none;}
+    .navbar .nav-item:hover .nav-link{}
+    .navbar .nav-item:hover .dropdown-menu {display: block;}
+    .navbar .nav-item .dropdown-menu{margin-top: 0;}
+}
+
+/* Motto */
+#motto {
+    color: white;
+    padding-top: 7%;
+}
+
+#motto > h1 {
+    font-weight: 500;
+}
+
+#motto > p {
+    font-weight:500;
+    font-size:large;
+    font-style: italic;
+
+}
+
+#goalHeader {
+    font-weight: 700;
+}
+
+/* Card Portfolio */
+.card-img-top {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+    
+#contact {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.card:hover {
+    transform: translate(0, -10px);
+    transition: 0.5s;box-shadow: 3px 6px 10px 2px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 3px 6px 10px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 6px 10px 2px rgba(0,0,0,0.35);
+}
+
+/* Form backround */
+.bg-form {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/bg.jpg") center/cover;
+}
+
+/* Form border modification */
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+/* Footer Links */
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+.footer-link:hover{
+    color: rgb(255, 199, 95);
+}
+
+/* Copyright */
+.copyright {
+    background: #000;
+    color: white;
+}
+
