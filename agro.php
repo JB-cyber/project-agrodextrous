@@ -1,5 +1,7 @@
 <?php
 
+require "connection.php";
+
 // Variable declaration
 $name= val ($_POST["name"]);
 $email= val ($_POST["email"]);
@@ -12,20 +14,6 @@ function val ($data) {
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-}
-
-//Database and Host
-$servername = "localhost";
-$username = "root";
-$password = null;
-$dbname = "agrodextrous";
-
-// Create connection
-$conn = new mysqli ($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("connection failed: " .$conn->$connect_error);
 }
 
 //SQL Query 
